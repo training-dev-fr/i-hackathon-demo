@@ -38,7 +38,6 @@ app.use('/uploads', (req, res, next) => {
 }, express.static(path.join(__dirname, 'uploads')));
 
 const server = http.createServer(app);
-initSocket(server);
 
 
 // Démarrage du serveur
