@@ -52,7 +52,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-black">
       {/* Hero Section */}
-      <section className="pt-20 pb-16 px-6 border-b border-gray-800">
+      <section className="pt-4 pb-4 px-6 border-b border-gray-800">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block mb-4 px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full">
             <span className="text-sm font-medium text-cyan-400">🚀 I-Hackathon 2025</span>
@@ -129,7 +129,7 @@ export default function HomePage() {
             
         </div>
       </section>
-      <section className="pt-20 pb-16 px-6 border-b border-gray-800">
+      <section className="pt-4 pb-4 px-6 border-b border-gray-800">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight text-center">Contactez-moi</h1>
           <a href="https://www.linkedin.com/in/aurelien-vaast/" target="_blank" className="mt-4 p-8 profile flex justify-between bg-slate-950 cursor-pointer">
