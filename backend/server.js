@@ -3,7 +3,6 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const http = require('http')
 const { sequelize } = require('./config/database');
-const {initSocket} = require('./modules/socket/index');
 
 dotenv.config();
 
