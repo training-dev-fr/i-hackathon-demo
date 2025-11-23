@@ -129,7 +129,7 @@ export default function HomePage() {
             
         </div>
       </section>
-      <section className="pt-4 pb-4 px-6 border-b border-gray-800">
+      <section className="pt-4 pb-4 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight text-center">Contactez-moi</h1>
           <a href="https://www.linkedin.com/in/aurelien-vaast/" target="_blank" className="mt-4 p-8 profile flex justify-between bg-slate-950 cursor-pointer">
