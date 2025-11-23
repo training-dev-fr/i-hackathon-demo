@@ -1,0 +1,48 @@
+@import "../styles/globals.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-background text-foreground;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-600 transition-colors;
+  }
+
+    .btn-success {
+    @apply px-4 py-2 bg-green-700 text-white rounded-lg font-medium hover:bg-green-800 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-purple-600 transition-colors;
+  }
+
+  .btn-outline {
+    @apply px-4 py-2 border border-gray-200 text-foreground rounded-lg font-medium hover:bg-gray-50 transition-colors;
+  }
+
+.card {
+  @apply bg-card text-card-foreground rounded-lg shadow-sm p-4;
+}
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-200 bg-card rounded-lg focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+}
+
+.top-1{
+  top: 10px;
+}

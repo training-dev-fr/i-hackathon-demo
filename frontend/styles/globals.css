@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@custom-variant dark (&:is(.dark *));
+
+/* === Thème clair === */
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --border: oklch(0.922 0 0);
+  /* ... autres variables */
+}
+
+/* === Thème sombre === */
+.dark {
+  --background: rgb(24,24,24);
+  --foreground: oklch(0.985 0 0);
+  --card: rgb(24,24,24);
+  --card-foreground: oklch(0.9 0 0);
+  --border: oklch(0.25 0 0);
+  /* ... autres variables */
+}
+
+/* === Mapping vers Tailwind === */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  /* ... autres mappings */
+}
+
+/* === Styles de base === */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ⚠️ ⚠️ ⚠️  Ces lignes DOIVENT être à la fin */
