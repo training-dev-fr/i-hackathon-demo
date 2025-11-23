@@ -121,7 +121,7 @@ async function validate(req, res) {
 async function getHistory(req, res) {
   try {
     const { exerciseId } = req.query;
-    const history = await promptService.getHistory(req.user.id, exerciseId);
+    const history = await promptService.getHistory(req.ip, exerciseId);
 
     return success(res, history);
   } catch (err) {
